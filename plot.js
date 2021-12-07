@@ -21,6 +21,7 @@ var plotSequenceCosts = async (plotElement) => {
       "y": {
         "field": "cost_per_mb",
         "type": "quantitative",
+        "scale": {"type": "log"},
         "axis": {
           "labels": null,
           "title": null
