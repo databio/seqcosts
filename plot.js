@@ -1,7 +1,7 @@
 var plotSequenceCosts = async (plotElement) => {
   // retrieve data
   var seqCostData = await fetch("data.csv").then(
-    // response => response.json()).then(
+    response => response.text()).then(
     response => { 
       return response
     })
