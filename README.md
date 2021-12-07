@@ -8,11 +8,11 @@ I like to use this plot in lectures and presentations, but I grew frustrated wit
 
 ## Use
 
-You can get the raw CSV data at [https://databio.org/seqcosts/data.csv]().
+You can get the raw CSV data at [https://databio.org/seqcosts/data.csv](https://databio.org/seqcosts/data.csv).
 
 ## View
 
-You can embed the vega-lite visualization at [https://databio.org/seqcosts/view.html]().
+You can embed the vega-lite visualization at [https://databio.org/seqcosts/view.html](https://databio.org/seqcosts/view.html).
 
 
 ## Update
