@@ -14,11 +14,13 @@ var plotSequenceCosts = async (plotElement) => {
         "type": "csv", 
       }
     },
+    "title": "Sequencing costs over time",
     "mark": "line",
     "width": 600,
     "height": 500,
     "encoding": {
       "y": {
+        "title": "Cost per MB",
         "field": "cost_per_mb",
         "type": "quantitative",
         "scale": {"type": "log"},
@@ -28,6 +30,7 @@ var plotSequenceCosts = async (plotElement) => {
         }
       },
       "x": {
+        "title": "date",
         "field": "date",
         "type": "temporal",
         "timeUnit": "utcyearmonthdate",
