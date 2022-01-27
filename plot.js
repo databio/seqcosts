@@ -20,22 +20,20 @@ var plotSequenceCosts = async (plotElement) => {
     "height": 400,
     "encoding": {
       "y": {
-        "title": "Cost per MB",
         "field": "cost_per_mb",
         "type": "quantitative",
         "scale": {"type": "log"},
         "axis": {
-          "labels": null,
-          "title": null
+          "title": "Cost per MB ($)",
+          "labels": null
         }
       },
       "x": {
-        "title": "date",
         "field": "date",
         "type": "temporal",
         "timeUnit": "utcyearmonthdate",
         "axis": {
-          "title": null,
+          "title": "Date",
           "labelAngle": -90 
         }
       }
