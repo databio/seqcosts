@@ -16,8 +16,8 @@ var plotSequenceCosts = async (plotElement) => {
     },
     "title": "Sequencing costs over time",
     "mark": "line",
-    "width": 600,
-    "height": 500,
+    "width": 800,
+    "height": 400,
     "encoding": {
       "y": {
         "title": "Cost per MB",
