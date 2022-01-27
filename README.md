@@ -17,4 +17,4 @@ You can embed the vega-lite visualization at [https://databio.org/seqcosts/view.
 
 ## Update
 
-If you use this and notice it's not updated, please add any new rows to [data.csv]() via Pull Request.
+If you use this and notice it's not updated, please add any new rows to [data.csv](data.csv) via Pull Request.
