@@ -13,14 +13,28 @@ You can get the raw CSV data at:
 - SRA content: [https://databio.org/seqcosts/data/sra_stat.csv](https://databio.org/seqcosts/data/sra_stat.csv).
 
 
-
-
 ## View
 
 You can embed the vega-lite visualization at:
 - Costs: [https://databio.org/seqcosts/cost.html](https://databio.org/seqcosts/cost.html).
 - SRA data: [https://databio.org/seqcosts/sra.html](https://databio.org/seqcosts/sra.html).
 
+## Embed
+
+If you want to use the plot in a presentation or web page, you have two options
+
+### Use javascript directly
+
+You can look at how I embedded it in the html pages above and just do something similar to use the underlying data however you want.
+
+### Use an iframe.
+
+You can embed the HTML page using an `<iframe>` like this:
+
+```
+<iframe src="https://databio.org/seqcosts/sra.html" width="950" height="550"></iframe>
+<a style="font-size:0.6em" href="https://databio.org/seqcosts">databio.org/seqcosts</a>
+```
 
 ## Update
 

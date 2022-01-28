@@ -60,7 +60,7 @@ var plotSRAStats = async (plotElement) => {
         "type": "csv", 
       }
     },
-    "title": "Sequence Read Archvie growth",
+    "title": "Sequence Read Archive growth",
     "mark": "line",
     "width": 800,
     "height": 400,
