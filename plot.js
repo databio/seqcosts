@@ -1,6 +1,6 @@
 var plotSequenceCosts = async (plotElement) => {
   // retrieve data
-  var seqCostData = await fetch("data/sequencing_cost.csv").then(
+  var seqCostData = await fetch("https://databio.org/seqcosts/data/sequencing_cost.csv").then(
     response => response.text()).then(
     response => { 
       return response
@@ -46,7 +46,7 @@ var plotSequenceCosts = async (plotElement) => {
 var plotSRAStats = async (plotElement) => {
   // retrieve data
   var sraData = await fetch(
-    "data/sra_stat.csv").then(
+    "https://databio.org/seqcosts/data/sra_stat.csv").then(
     response => response.text()).then(
     response => { 
       return response
@@ -60,20 +60,23 @@ var plotSRAStats = async (plotElement) => {
         "type": "csv", 
       }
     },
-    "title": "SRA database over time",
+    "title": "Sequence Read Archvie growth",
     "mark": "line",
     "width": 800,
     "height": 400,
+    "transform": [
+      { 
+        "calculate": "datum.bytes / 1000000000000",
+        "as": "terabytes"
+      }
+    ],
     "encoding": {
-      "transform": [
-        { "calculate": "bytes / 1000000", "as": "gigabytes"}
-      ],
       "y": {
-        "field": "gigabytes",
+        "field": "terabytes",
         "type": "quantitative",
         "scale": {"type": "log"},
         "axis": {
-          "title": "GigaBytes in SRA",
+          "title": "TeraBytes in SRA",
           "labels": null
         }
       },

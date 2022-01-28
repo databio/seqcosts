@@ -8,7 +8,9 @@ I like to use this plot in lectures and presentations, but I grew frustrated wit
 
 ## Use
 
-You can get the raw CSV data at [https://databio.org/seqcosts/data/sequencing_costs.csv](https://databio.org/seqcosts/data/sequencing_costs.csv).
+You can get the raw CSV data at:
+- Costs: [https://databio.org/seqcosts/data/sequencing_cost.csv](https://databio.org/seqcosts/data/sequencing_cost.csv).
+- SRA content: [https://databio.org/seqcosts/data/sra_stat.csv](https://databio.org/seqcosts/data/sra_stat.csv).
 
 
 
