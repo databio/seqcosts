@@ -65,12 +65,15 @@ var plotSRAStats = async (plotElement) => {
     "width": 800,
     "height": 400,
     "encoding": {
+      "transform": [
+        { "calculate": "bytes / 1000000", "as": "gigabytes"}
+      ],
       "y": {
-        "field": "bytes",
+        "field": "gigabytes",
         "type": "quantitative",
         "scale": {"type": "log"},
         "axis": {
-          "title": "Bytes in SRA",
+          "title": "GigaBytes in SRA",
           "labels": null
         }
       },
