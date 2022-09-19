@@ -1,6 +1,6 @@
 # SeqCosts
 
-This repository provides an API and visualization of the cost of sequencing over time. Data comes from [NHGRI DNA sequencing costs](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data). 
+This [GitHub repository](https://github.com/databio/seqcosts) provides an API and visualization of the cost of sequencing over time. Data comes from [NHGRI DNA sequencing costs](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data). 
 
 ## Motivation
 
@@ -11,7 +11,6 @@ I like to use this plot in lectures and presentations, but I grew frustrated wit
 You can get the raw CSV data at:
 - Costs: [https://databio.org/seqcosts/data/sequencing_cost.csv](https://databio.org/seqcosts/data/sequencing_cost.csv).
 - SRA content: [https://databio.org/seqcosts/data/sra_stat.csv](https://databio.org/seqcosts/data/sra_stat.csv).
-
 
 ## View
 
@@ -38,4 +37,4 @@ You can embed the HTML page using an `<iframe>` like this:
 
 ## Update
 
-If you use this and notice it's not updated, please add any new rows to [data/sequencing_costs.csv](data/sequencing_costs.csv) via Pull Request.
+If you use this and notice it's not updated, please add any new rows to `data/sequencing_costs.csv` via Pull Request.
