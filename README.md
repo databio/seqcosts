@@ -4,7 +4,7 @@ This [GitHub repository](https://github.com/databio/seqcosts) provides an API an
 
 ## Motivation
 
-I like to use this plot in lectures and presentations, but it was a challenge to keep it up-to-date. The plots and data provided directly from NHGRI was not amenable to be permanently linked in a lecture that would auto update, because URLs would change, new plots would be produced rather than updating old links with new data, etc. To make it more useful, I needed a stable URL for data and visualization. So, I made one and put it here so that anyone can update the data. I have simply reformatted the data to make it more FAIR; instead of an excel spreadsheet and an graphical image, I provide an API to access the data, and a vega-lite dynamic plot that just retrieves that data. This, hosted in a persistent spot, makes it possible to produce presentations that are always automatically up-to-date.
+I like to use this plot showing the rapid decrease in sequencing costs in lectures and presentations, but it was a challenge to keep it up-to-date. The plots and data provided directly from NHGRI was not amenable to be permanently linked in a lecture that would auto update, because URLs would change, new plots would be produced rather than updating old links with new data, etc. To make it more useful, I needed a stable URL for data and visualization. So, I made one and put it here so that anyone can update the data. I have simply reformatted the data to make it more FAIR; instead of an excel spreadsheet and an graphical image, I provide an API to access the data, and a vega-lite dynamic plot that just retrieves that data. This, hosted in a persistent spot, makes it possible to produce presentations that are always automatically up-to-date.
 
 ## Use
 
@@ -14,7 +14,7 @@ You can get the raw CSV data at:
 
 ## View
 
-You can embed the vega-lite visualization at:
+You can view corresponding vega-lite visualizations at:
 - Costs: [https://databio.org/seqcosts/cost.html](https://databio.org/seqcosts/cost.html).
 - SRA data: [https://databio.org/seqcosts/sra.html](https://databio.org/seqcosts/sra.html).
 
