@@ -4,7 +4,7 @@ This [GitHub repository](https://github.com/databio/seqcosts) provides an API an
 
 ## Motivation
 
-I like to use this plot in lectures and presentations, but I grew frustrated with keeping it up-to-date. The NHGRI plots and data was not amenable to be permanently linked in a lecture; they would change URLs, release new plots instead of updating old ones when data changed, etc. To make it more useful, I needed a stable URL for both data and visualization. So, I made one and put it here so that anyone can update the data. I have simply reformatted the data to make it more FAIR; instead of an excel spreadsheet and an graphical image, I provide an API and a vega-lite dynamic plot.
+I like to use this plot in lectures and presentations, but it was a challenge to keep it up-to-date. The plots and data provided directly from NHGRI was not amenable to be permanently linked in a lecture that would auto update, because URLs would change, new plots would be produced rather than updating old links with new data, etc. To make it more useful, I needed a stable URL for data and visualization. So, I made one and put it here so that anyone can update the data. I have simply reformatted the data to make it more FAIR; instead of an excel spreadsheet and an graphical image, I provide an API to access the data, and a vega-lite dynamic plot that just retrieves that data. This, hosted in a persistent spot, makes it possible to produce presentations that are always automatically up-to-date.
 
 ## Use
 
