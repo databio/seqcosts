@@ -1,4 +1,4 @@
-var plotSequenceCosts = async (plotElement) => {
+var plotSequenceCosts = async (plotElement, width=800, height=400) => {
   // retrieve data
   var seqCostData = await fetch("https://databio.org/seqcosts/data/sequencing_cost.csv").then(
     response => response.text()).then(
@@ -16,8 +16,8 @@ var plotSequenceCosts = async (plotElement) => {
     },
     "title": "Sequencing costs over time",
     "mark": "line",
-    "width": 800,
-    "height": 400,
+    "width": width,
+    "height": height,
     "encoding": {
       "y": {
         "field": "cost_per_mb",
@@ -43,7 +43,7 @@ var plotSequenceCosts = async (plotElement) => {
   vegaEmbed('#'+plotElement, linePlot)
 }
 
-var plotSRAStats = async (plotElement) => {
+var plotSRAStats = async (plotElement, width=800, height=300) => {
   // retrieve data
   var sraData = await fetch(
     "https://databio.org/seqcosts/data/sra_stat.csv").then(
@@ -62,8 +62,8 @@ var plotSRAStats = async (plotElement) => {
     },
     "title": "Sequence Read Archive growth",
     "mark": "line",
-    "width": 800,
-    "height": 400,
+    "width": width,
+    "height": height,
     "transform": [
       { 
         "calculate": "datum.bytes / 1000000000000",
