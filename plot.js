@@ -1,4 +1,4 @@
-var plotSequenceCosts = async (plotElement, width=800, height=400) => {
+var plotSequenceCosts = async (plotElement, width=500, height=300) => {
   // retrieve data
   var seqCostData = await fetch("https://databio.org/seqcosts/data/sequencing_cost.csv").then(
     response => response.text()).then(
@@ -14,6 +14,26 @@ var plotSequenceCosts = async (plotElement, width=800, height=400) => {
         "type": "csv", 
       }
     },
+    "config": {
+      "axis": {
+        "titleFont": "Arial", 
+        "titleFontWeight": 400,
+        "titleFontSize": 16,
+        "titlePadding": 5,
+        "labelFont": "Arial",
+        "labelFontSize": 12,
+        "grid": false
+       },
+      "legend": {"labelFont": "Arial", "titleFont": "Arial"},
+      "header": {"labelFont": "Arial", "titleFont": "Arial"},
+      "mark": {"font": "Arial"},
+      "title": {
+        "font": "Arial",
+        "subtitleFont": "Arial",
+        "fontWeight": 400,
+        "fontSize": 20,
+      },
+    },
     "title": "Sequencing costs over time",
     "mark": "line",
     "width": width,
@@ -25,7 +45,7 @@ var plotSequenceCosts = async (plotElement, width=800, height=400) => {
         "scale": {"type": "log"},
         "axis": {
           "title": "Cost per MB ($)",
-          "labels": null
+          "labels": null,
         }
       },
       "x": {
@@ -34,13 +54,13 @@ var plotSequenceCosts = async (plotElement, width=800, height=400) => {
         "timeUnit": "utcyearmonthdate",
         "axis": {
           "title": "Date",
-          "labelAngle": -90 
+          "labelAngle": -90,
         }
       }
     }
   }
 
-  vegaEmbed('#'+plotElement, linePlot)
+  vegaEmbed(view='#'+plotElement, spec=linePlot, vgSpec={"renderer": "svg", "scaleFactor": 0.6})
 }
 
 var plotSRAStats = async (plotElement, width=800, height=300) => {
@@ -59,6 +79,26 @@ var plotSRAStats = async (plotElement, width=800, height=300) => {
       "format": {
         "type": "csv", 
       }
+    },
+    "config": {
+      "axis": {
+        "titleFont": "Arial", 
+        "titleFontWeight": 400,
+        "titleFontSize": 16,
+        "titlePadding": 5,
+        "labelFont": "Arial",
+        "labelFontSize": 12,
+        "grid": false
+       },
+      "legend": {"labelFont": "Arial", "titleFont": "Arial"},
+      "header": {"labelFont": "Arial", "titleFont": "Arial"},
+      "mark": {"font": "Arial"},
+      "title": {
+        "font": "Arial",
+        "subtitleFont": "Arial",
+        "fontWeight": 400,
+        "fontSize": 20,
+      },
     },
     "title": "Sequence Read Archive growth",
     "mark": "line",
@@ -92,5 +132,5 @@ var plotSRAStats = async (plotElement, width=800, height=300) => {
     }
   }
 
-  vegaEmbed('#'+plotElement, linePlot)
+  vegaEmbed('#'+plotElement, linePlot, vgSpec={"renderer": "svg", "scaleFactor": 0.6})
 }
